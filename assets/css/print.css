@@ -1,0 +1,63 @@
+/* override styles when printing */
+@media print {
+    body {
+      margin: 0;
+      color: #000;
+      background-color: #fff;
+    }
+
+    #top-bar{
+        display:none !important;
+    }
+    #header .left-side .mmenu-trigger,#header .left-side #navigation, #header .right-side{
+        display:none !important;
+    }
+
+    /* hide footer */
+    #footer{
+        display:none;
+    }
+
+    /* hide sidebar */
+    .sp-sidebar{
+        display:none;
+    }
+
+    a[href]:after {
+        content: none !important;
+      }
+
+
+      .print-show{
+          display: block!important;
+      }
+
+      .print-hide{
+          display:none;
+      }
+
+      .property-slider,.property-slider-nav{
+          display:none!important;
+      }
+
+      #titlebar.property-titlebar{
+          padding-top:0!important;
+          padding-bottom:0!important;
+
+      }
+
+      .property-price{
+          font-size:14px!important;
+      }
+
+      .margin-bottom-50{
+          margin-bottom:0px!important;
+      }
+
+      .property-description h3.desc-headline{
+          margin-top:10px;
+          margin-bottom:10px;
+          padding-bottom:0px;
+      }
+  
+  }
